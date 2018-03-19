@@ -2,6 +2,7 @@
 #include <iomanip> 
 #include<windows.h>
 using namespace std;
+int f; 
 class data 
 { 
 private: 
@@ -56,7 +57,6 @@ else
 void data::display()   //显示 
  {
  int n=fday();
- int f;
  cout<<endl<<"想要几列的万年历";
  cin>>f;
   for(int i=1;i<=12;i++)
@@ -64,21 +64,27 @@ void data::display()   //显示
 	int s=1;
 	cout<<endl;
 	if(i%f==1)                                    //位置确定
-		move(15,(10*(i-1))/2+1);
+		move(15,10*((i-1)/f)+1);
+	else if(f==1)
+		cout<<"";
 	else
-		move(50*(i%(f-1))+55,(10*(i-2))/2+1);
+		move(50*((i-1)%f)+20,10*((i-1)/f)+1);
 	cout<<setw(5)<<i<<"月"<<endl;
 	if(i%f==1)                                   //位置确定
-		move(1,(10*(i-1))/2+2);
+		move(1,10*((i-1)/f)+2);
+	else if(f==1)
+		cout<<"";
 	else
-		move(50*(i%(f-1))+55,(10*(i-2))/2+2);
+		move(50*((i-1)%f)+20,10*((i-1)/f)+2);
 	for(int z=0;z<7;z++)
          cout<<weeked[z]<<"   ";
 	cout<<endl;
 	if(i%f==1)                                   //位置确定
-		move(1,(10*(i-1))/2+3);
+		move(1,10*((i-1)/f)+3);
+	else if(f==1)
+		cout<<"";
 	else
-		move(50*(i%(f-1))+55,(10*(i-2))/2+3);
+		move(50*((i-1)%f)+20,10*((i-1)/f)+3);
 	for(int x=1;x<=n;x++,s++)
       cout<<"       ";
 	for(int c=1;c<=monthday(i);c++,s++)
@@ -92,18 +98,22 @@ void data::display()   //显示
 		 {
   	          cout<<endl;
 			  if(i%f==1)                                   //位置确定
-				  move(1,(10*(i-1))/2+3+s/7);
+				  move(1,10*((i-1)/f)+s/7+3);
+			  else if(f==1)
+				  cout<<"";
 			  else
-				  move(50*(i%(f-1))+55,(10*(i-2))/2+s/7+3);
+				  move(50*((i-1)%f)+20,10*((i-1)/f)+s/7+3);
 		 }
   }
   n=s%7;
   
   cout<<endl;
   if(i%f==1)                                   //位置确定
-		move(1,(10*(i-1))/2+4+s/7);
+		move(1,10*((i-1)/f)+s/7+4);
+  else if(f==1)
+		cout<<"";
   else
-		move(50*(i%(f-1))+55,(10*(i-2))/2+s/7+4);
+		move(50*((i-1)%f)+20,10*((i-1)/f)+s/7+4);
   cout<<"ㄓㄓㄓㄓㄓㄓㄓㄓㄓㄓㄓㄓㄓㄓㄓㄓㄓㄓㄓㄓㄓㄓㄓㄓ"<<endl;
   }
  }
