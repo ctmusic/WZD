@@ -1,0 +1,5 @@
+﻿  Calctlator.cpp
+f:\visual studio community 2017 project\calctlator\calctlator\calctlator.cpp(38): warning C4244: “=”: 从“::size_t”转换到“float”，可能丢失数据
+f:\visual studio community 2017 project\calctlator\calctlator\calctlator.cpp(48): warning C4244: “=”: 从“::size_t”转换到“float”，可能丢失数据
+f:\visual studio community 2017 project\calctlator\calctlator\calctlator.cpp(154): warning C4244: “return”: 从“float”转换到“::size_t”，可能丢失数据
+  Calctlator.vcxproj -> F:\Visual Studio Community 2017 Project\Calctlator\x64\Debug\Calctlator.exe

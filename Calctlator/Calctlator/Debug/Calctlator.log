@@ -1,0 +1,7 @@
+﻿  Calctlator.cpp
+f:\visual studio community 2017 project\calctlator\calctlator\calctlator.cpp(45): warning C4018: “<”: 有符号/无符号不匹配
+f:\visual studio community 2017 project\calctlator\calctlator\calctlator.cpp(119): warning C4018: “<”: 有符号/无符号不匹配
+f:\visual studio community 2017 project\calctlator\calctlator\calctlator.cpp(125): warning C4018: “<”: 有符号/无符号不匹配
+f:\visual studio community 2017 project\calctlator\calctlator\calctlator.cpp(121): warning C4390: “;”: 找到空的受控语句；这是否是有意的?
+f:\visual studio community 2017 project\calctlator\calctlator\calctlator.cpp(210): warning C4018: “<”: 有符号/无符号不匹配
+  Calctlator.vcxproj -> F:\Visual Studio Community 2017 Project\Calctlator\Debug\Calctlator.exe
